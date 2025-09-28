@@ -23,8 +23,7 @@
         },
         {
           "type": "path",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "style": "plain",
           "foreground": "#00ff00",
           "background": "#000000",
           "properties": {
