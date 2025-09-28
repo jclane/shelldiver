@@ -71,8 +71,10 @@
           "background": "#000000",
           "properties": {
             "style": "folder",
+            "home_icon": "\uee47",
             "mapped_locations": {
-              "C:\\": "H"
+              "C:\\": "H",
+              "\\": "H"
             }
           }
         }
