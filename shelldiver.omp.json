@@ -12,7 +12,7 @@
           "style": "plain",
           "background": "#000000",
           "foreground": "#00ff00",
-          "template": "\uee15 {{ .UserName }} {{ if .SSHSession }}\udb82\udd09 {{ end }} {{ .HostName }} "
+          "template": "\uee15 {{ .UserName }} {{ if .SSHSession }}\udb82\udd09{{ else POTATO}}{{ end }} {{ .HostName }} "
         },
         {
           "type": "path",
