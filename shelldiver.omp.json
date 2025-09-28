@@ -121,7 +121,7 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
-          "template": "-> "
+          "template": "\udb80\udec7 "
         }
       ]
     }
