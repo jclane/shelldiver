@@ -18,7 +18,7 @@
           "type": "session",
           "style": "plain",
           "background": "#000000",
-          "foreground": "#00ff00",
+          "foreground": "#00d7ff",
           "template": "{{ .UserName }} "
         },
         {
@@ -32,7 +32,7 @@
           "type": "session",
           "style": "plain",
           "background": "#000000",
-          "foreground": "#00ff00",
+          "foreground": "#00d7ff ",
           "template": "{{ .HostName }}"
         }
       ]
@@ -44,7 +44,7 @@
         {
           "type": "time",
           "style": "plain",
-          "foreground": "#00ff00",
+          "foreground": "#d7ff00 ",
           "template": "\ue641 {{ now | date .Format }}",
           "properties": {
             "time_format": "3:04 PM (1/_2)"
@@ -60,37 +60,35 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#00ff00",
+          "foreground": "#d7ff00",
           "background": "#000000",
           "template": "\udb84\udc80 \ueb70"
         },
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#00ff00",
+          "foreground": "#00d7ff",
           "background": "#000000",
           "properties": {
             "style": "agnoster",
-            "home_icon": "\udb80\udde7 ",
+            "home_icon": "\udb80\udde7",
             "folder_icon": "\uf115 ",
-            "folder_separator_icon": "\uf061 ",
-            "mapped_locations": {
-            }
+            "folder_separator_icon": "\uf061 "
           }
         },
         {
           "type": "git",
           "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#193549",
-          "background": "#ffeb3b",
+          "powerline_symbol": " ",
+          "foreground": "#000000",
+          "background": "#ffffff",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFEB3B{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
             "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
             "{{ if gt .Behind 0 }}#B388FB{{ end }}"
           ],
-          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}",
+          "template": "{{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}",
           "properties": {
             "fetch_status": true,
             "fetch_upstream_icon": true,
@@ -99,8 +97,8 @@
             },
             "source": "cli",
             "mapped_branches": {
-              "feat/*": "🚀 ",
-              "bug/*": "🐛 "
+              "feat/*": "\udb81\ude91 ",
+              "bug/*": "\udb80\udce4 "
             }
           }
         }
@@ -117,7 +115,7 @@
           "properties": {
             "always_enabled": true
           },
-          "foreground": "#00ff00",
+          "foreground": "#00d7ff",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
