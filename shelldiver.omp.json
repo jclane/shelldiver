@@ -18,7 +18,7 @@
           "type": "session",
           "style": "plain",
           "background": "#000000",
-          "foreground": "#00d7ff ",
+          "foreground": "#00d7ff",
           "template": "{{ .UserName }} "
         },
         {
@@ -60,18 +60,18 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#d7ff00 ",
+          "foreground": "#d7ff00",
           "background": "#000000",
           "template": "\udb84\udc80 \ueb70"
         },
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#00d7ff ",
+          "foreground": "#00d7ff",
           "background": "#000000",
           "properties": {
             "style": "agnoster",
-            "home_icon": "\udb80\udde7 ",
+            "home_icon": "\udb80\udde7",
             "folder_icon": "\uf115 ",
             "folder_separator_icon": "\uf061 "
           }
@@ -81,7 +81,7 @@
           "style": "powerline",
           "powerline_symbol": " ",
           "foreground": "#000000",
-          "background": "#ff00ff",
+          "background": "#ffffff",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFEB3B{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
@@ -115,7 +115,7 @@
           "properties": {
             "always_enabled": true
           },
-          "foreground": "#00d7ff ",
+          "foreground": "#00d7ff",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
