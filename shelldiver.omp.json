@@ -71,7 +71,7 @@
           "background": "#000000",
           "properties": {
             "style": "folder",
-            "home_icon": "\uee47",
+            "home_icon": "\udb80\udde7",
             "mapped_locations": {
               "C:\\": "H",
               "\\": "H"
