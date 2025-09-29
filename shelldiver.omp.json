@@ -81,9 +81,9 @@
           "type": "git",
           "style": "diamond",
           "trailing_diamond": "\ue0b0",
-          "foreground": "#00005f",
           "foreground_templates": [
-            "{{ if 1 }}#00FF00{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#00FF00{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#00FF00{{ end }}"
           ],
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#d9ff00{{ end }}",
