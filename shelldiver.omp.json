@@ -83,7 +83,9 @@
           "trailing_diamond": "\ue0b0",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#00005f{{ end }}",
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#00005f{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#00005f{{ end }}",
+            "{{ if gt .Ahead 0 }}#00d7ff{{ end }}",
+            "{{ if gt .Behind 0 }}#00d7ff{{ end }}"
           ],
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#d9ff00{{ end }}",
