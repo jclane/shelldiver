@@ -10,29 +10,29 @@
         {
           "type": "session",
           "style": "plain",
-          "background": "#000000",
+          "background": "#00005f",
           "foreground": "#d7ff00",
           "template": "{{ if .SSHSession }}\udb82\udfc8 {{ else }}\uee15 {{ end }}"
         },
         {
           "type": "session",
           "style": "plain",
-          "background": "#000000",
+          "background": "#00005f",
           "foreground": "#00d7ff",
           "template": "{{ .UserName }} "
         },
         {
           "type": "session",
           "style": "plain",
-          "background": "#000000",
+          "background": "#00005f",
           "foreground": "#d7ff00",
           "template": "{{ if .SSHSession }}\udb82\udd09 {{ else }}\uf197 {{ end }}"
         },
         {
           "type": "session",
           "style": "plain",
-          "background": "#000000",
-          "foreground": "#00d7ff ",
+          "background": "#00005f",
+          "foreground": "#00d7ff",
           "template": "{{ .HostName }}"
         }
       ]
@@ -44,7 +44,7 @@
         {
           "type": "time",
           "style": "plain",
-          "foreground": "#d7ff00 ",
+          "foreground": "#d7ff00",
           "template": "\ue641 {{ now | date .Format }}",
           "properties": {
             "time_format": "3:04 PM (1/_2)"
@@ -61,34 +61,34 @@
           "type": "text",
           "style": "plain",
           "foreground": "#d7ff00",
-          "background": "#000000",
+          "background": "#00005f",
           "template": "\udb84\udc80 \ueb70"
         },
         {
           "type": "path",
-          "style": "plain",
+          "style": "diamond",
           "foreground": "#00d7ff",
-          "background": "#000000",
+          "background": "#00005f",
+          "trailing_diamond": "<#00005f>\ue0b0</>",
           "properties": {
             "style": "agnoster",
-            "home_icon": "\udb80\udde7",
+            "home_icon": "\udb80\udde7 ",
             "folder_icon": "\uf115 ",
             "folder_separator_icon": "\uf061 "
           }
         },
         {
           "type": "git",
-          "style": "powerline",
-          "powerline_symbol": " ",
-          "foreground": "#000000",
-          "background": "#ffffff",
+          "style": "diamond",
+          "foreground": "#00005f",
+          "trailing_diamond": "\ue0b0",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFEB3B{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
             "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
             "{{ if gt .Behind 0 }}#B388FB{{ end }}"
           ],
-          "template": "{{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}",
+          "template": " {{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}",
           "properties": {
             "fetch_status": true,
             "fetch_upstream_icon": true,
