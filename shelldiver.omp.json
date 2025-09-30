@@ -8,10 +8,21 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "text",
+          "style": "diamond",
+          "leading_diamond": "\ue0d7",
+          "background": "#00005f",
+          "foreground": "#d7ff00",
+          "template": " \udb83\udecb\ueb70 "
+        },
+        {
           "type": "session",
           "style": "plain",
           "background": "#00005f",
           "foreground": "#d7ff00",
+          "foreground_template": [
+            "{{ if .Root ()}}#af5f00{{ end }}"
+          ],
           "template": "{{ if .SSHSession }}\udb82\udfc8 {{ else }}\uee15 {{ end }}"
         },
         {
@@ -30,10 +41,11 @@
         },
         {
           "type": "session",
-          "style": "plain",
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
           "background": "#00005f",
           "foreground": "#00d7ff",
-          "template": "{{ .HostName }}"
+          "template": "{{ .HostName }} "
         }
       ]
     },
