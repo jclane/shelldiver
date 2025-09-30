@@ -29,7 +29,7 @@
           "type": "session",
           "style": "plain",
           "background": "#00005f",
-          "foreground": "#00d7ff",
+          "foreground": "#d78700",
           "template": "{{ .UserName }} "
         },
         {
