@@ -10,34 +10,18 @@
         {
           "type": "session",
           "style": "diamond",
-          "leading_diamond": "<#00d7ff> \udb81\udd0c </>",
+          "leading_diamond": "<#00d7ff> \udb81\udd0c</><#00d7ff>\udb81\udd0c </>",
           "background": "#00005f",
           "foreground": "#00d7ff",
-          "template": "{{ if .SSHSession }}<#d7ff00>\udb84\udf83</> STN {{ else }}<#d7ff00>\uf197 </> SES {{ end }}"
+          "template": "{{ if .SSHSession }}<#d7ff00>\udb84\udf83</>STN {{ else }}<#d7ff00>\uf197 </>SES {{ end }}"
         },
         {
           "type": "session",
           "style": "diamond",
-          "trailing_diamond": "<#00d7ff>\udb81\udd0c </>",
+          "trailing_diamond": "<#00d7ff>\udb81\udd0c</><#00d7ff>\udb81\udd0c </>",
           "background": "#00005f",
           "foreground": "#d7ff00",
-          "template": "{{ .HostName }} "
-        }
-      ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "type": "session",
-          "style": "diamond",
-          "leading_diamond": "<#00d7ff> \udb81\udd0c </>",
-          "trailing_diamond": "<#00d7ff>\udb81\udd0c </>",
-          "background": "#00005f",
-          "foreground": "#00d7ff",
-          "template": "<#d7ff00>\uee15</>  OPERATED BY <#d7ff00>{{ .UserName }}</> "
+          "template": "{{ .HostName }} <#00d7ff>\udb81\udd0c</> <#d7ff00>\uee15</><#00d7ff> OPERATED BY </><#d7ff00>{{ .UserName }}</> "
         }
       ]
     },
@@ -66,7 +50,7 @@
           "style": "plain",
           "foreground": "#d7ff00",
           "background": "#00005f",
-          "template": "\udb84\udc80 \ueb70"
+          "template": " <#00d7ff>\udb81\udd0c</> \udb84\udc80 \ueb70"
         },
         {
           "type": "path",
