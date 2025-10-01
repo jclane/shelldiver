@@ -55,7 +55,7 @@
         {
           "type": "path",
           "style": "diamond",
-          "foreground": "#00d7ff",
+          "foreground": "#d7ff00",
           "background": "#00005f",
           "trailing_diamond": "\ue0b0",
           "properties": {
