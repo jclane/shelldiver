@@ -8,48 +8,40 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "text",
+          "type": "session",
           "style": "diamond",
-          "leading_diamond": "\ue0d7",
-          "background": "#00005f",
-          "foreground": "#d7ff00",
-          "template": " \udb83\udecb\ueb70 "
-        },
-        {
-          "type": "session",
-          "style": "plain",
-          "background": "#00005f",
-          "foreground": "#d7ff00",
-          "foreground_template": [
-            "{{ if .Root ()}}#af5f00{{ end }}"
-          ],
-          "template": "{{ if .SSHSession }}\udb82\udfc8 {{ else }}\uee15 {{ end }}"
-        },
-        {
-          "type": "session",
-          "style": "plain",
+          "leading_diamond": "<#00d7ff> \udb81\udd0c </>",
           "background": "#00005f",
           "foreground": "#00d7ff",
-          "template": "{{ .UserName }} "
-        },
-        {
-          "type": "session",
-          "style": "plain",
-          "background": "#00005f",
-          "foreground": "#d7ff00",
-          "template": "{{ if .SSHSession }}\udb82\udd09 {{ else }}\uf197 {{ end }}"
+          "template": "{{ if .SSHSession }}<#d7ff00>\udb84\udf83</> STN {{ else }}<#d7ff00>\uf197 </> SES {{ end }}"
         },
         {
           "type": "session",
           "style": "diamond",
-          "trailing_diamond": "\ue0b0",
+          "trailing_diamond": "<#00d7ff>\udb81\udd0c </>",
           "background": "#00005f",
-          "foreground": "#00d7ff",
+          "foreground": "#d7ff00",
           "template": "{{ .HostName }} "
         }
       ]
     },
-      {
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "leading_diamond": "<#00d7ff> \udb81\udd0c </>",
+          "trailing_diamond": "<#00d7ff>\udb81\udd0c </>",
+          "background": "#00005f",
+          "foreground": "#00d7ff",
+          "template": "<#d7ff00>\uee15</>  OPERATED BY <#d7ff00>{{ .UserName }}</> "
+        }
+      ]
+    },
+    {
       "type": "prompt",
       "alignment": "right",
       "segments": [
@@ -57,9 +49,9 @@
           "type": "time",
           "style": "plain",
           "foreground": "#d7ff00",
-          "template": "\ue641 {{ now | date .Format }}",
+          "template": "T={{ now | date .Format }}",
           "properties": {
-            "time_format": "3:04 PM (1/_2)"
+            "time_format": "3:04PM"
           }
         }
       ]
