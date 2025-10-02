@@ -2,6 +2,14 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "final_space": true,
   "version": 3,
+  "palette": {
+    "dark-grey": "#262626",
+    "dark-blue": "#00005f",
+    "brite-blue": "#00d7ff",
+    "lite-grey": "#dadada",
+    "orange": "#ffaf00",
+    "yellow": "#d7ff00"
+  },
   "blocks": [
     {
       "type": "prompt",
@@ -10,18 +18,17 @@
         {
           "type": "session",
           "style": "diamond",
-          "leading_diamond": "<#00d7ff> \udb81\udd0c</><#00d7ff>\udb81\udd0c </>",
-          "background": "#00005f",
-          "foreground": "#00d7ff",
-          "template": "{{ if .SSHSession }}<#d7ff00>\udb84\udf83</> STN {{ else }}<#d7ff00>\uf197 </> SES {{ end }}"
+          "leading_diamond": "\u256d\u2500\ue0b3<p:lite-grey> \udb81\udd0c\udb81\udd0c </>",
+          "background": "p:dark-grey",
+          "foreground": "p:lite-grey",
+          "template": "{{ if .SSHSession }}<p:brite-blue>\udb84\udf83</>  STN {{ else }}<p:brite-blue>\uf197</>  SES {{ end }}"
         },
         {
           "type": "session",
           "style": "diamond",
-          "trailing_diamond": "<#00d7ff>\udb81\udd0c</><#00d7ff>\udb81\udd0c </>",
-          "background": "#00005f",
-          "foreground": "#d7ff00",
-          "template": "{{ .HostName }} <#00d7ff>\udb81\udd0c</> <#d7ff00>\uee15</><#00d7ff> OPERATED BY </><#d7ff00>{{ .UserName }}</> "
+          "trailing_diamond": "<p:lite-grey> \udb81\udd0c\udb81\udd0c </>\ue0b1",
+          "background": "p:dark-grey",
+          "template": "<p:brite-blue>{{ .HostName }}</> <p:lite-grey>\udb81\udd0c</> <p:lite-grey>OPERATED BY </><p:orange>{{ .UserName }}</> <p:yellow>\uee15</>"
         }
       ]
     },
@@ -32,7 +39,7 @@
         {
           "type": "time",
           "style": "plain",
-          "foreground": "#d7ff00",
+          "foreground": "p:yellow",
           "template": "T={{ now | date .Format }}",
           "properties": {
             "time_format": "3:04PM"
@@ -47,16 +54,17 @@
       "segments": [
         {
           "type": "text",
-          "style": "plain",
-          "foreground": "#d7ff00",
-          "background": "#00005f",
-          "template": " <#00d7ff>\udb81\udd0c</> \udb84\udc80 \ueb70"
+          "style": "diamond",
+          "leading_diamond": "\u251c\u2500\u2500\ue0b2",
+          "foreground": "p:yellow",
+          "background": "p:dark-grey",
+          "template": "<p:lite-grey>\udb81\udd0c</> \udb84\udc80 \ueb70"
         },
         {
           "type": "path",
           "style": "diamond",
-          "foreground": "#d7ff00",
-          "background": "#00005f",
+          "foreground": "p:brite-blue",
+          "background": "p:dark-grey",
           "trailing_diamond": "\ue0b0",
           "properties": {
             "style": "agnoster",
@@ -69,14 +77,14 @@
           "type": "git",
           "style": "diamond",
           "trailing_diamond": "\ue0b0",
-          "foreground": "#00005f",
+          "foreground": "p:dark-grey",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#00005f{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#00005f{{ end }}",
             "{{ if gt .Ahead 0 }}#00005f{{ end }}",
             "{{ if gt .Behind 0 }}#00005f{{ end }}"
           ],
-          "background": "#00d7ff",
+          "background": "p:lite-grey",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#d9ff00{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#d9ff00{{ end }}",
@@ -110,11 +118,11 @@
           "properties": {
             "always_enabled": true
           },
-          "foreground": "#00d7ff",
+          "foreground": "p:lite-grey",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
-          "template": "\udb80\udec7 "
+          "template": "<p:dark-grey>\u2570\ue0b3</>\udb80\udec7 "
         }
       ]
     }
