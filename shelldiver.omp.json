@@ -26,7 +26,7 @@
         {
           "type": "session",
           "style": "diamond",
-          "trailing_diamond": "<p:lite-grey> \udb81\udd0c\udb81\udd0c </>\ue0b0",
+          "trailing_diamond": "<p:lite-grey> \udb81\udd0c\udb81\udd0c </>\uf036",
           "background": "p:dark-grey",
           "template": "<p:brite-blue>{{ .HostName }}</> <p:lite-grey>\udb81\udd0c</> <p:lite-grey>OPERATED BY </><p:orange>{{ .UserName }}</> <p:yellow>\uee15</>"
         }
