@@ -55,7 +55,7 @@
         {
           "type": "text",
           "style": "diamond",
-          "leading_diamond": "\u2570\u2500\u2500\ue0b2",
+          "leading_diamond": "\u251c\u2500\u2500\ue0b2",
           "foreground": "p:yellow",
           "background": "p:dark-grey",
           "template": "<p:lite-grey>\udb81\udd0c</> \udb84\udc80 \ueb70"
@@ -122,7 +122,7 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
-          "template": "\udb80\udec7 "
+          "template": "<p:dark-grey>\u2570\ue0b3</>\udb80\udec7 "
         }
       ]
     }
