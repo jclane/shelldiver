@@ -16,7 +16,8 @@
   },
   "transient_prompt": {
     "foreground": "p:lite-grey",
-    "template": " <p:dark-grey>\ue0b3</>\udb80\udec7 "
+    "background": "p:dark-grey",
+    "template": "<p:dark-grey,transparent>\ue0b3</> \udb81\udd0c <p:orange>{{ .UserName }}</>\ue0bb\ue0bd<p:brite-blue>{{ .HostName }}</> <p:dark-grey,transparent>\ue0b0</><p:dark-grey,transparent>\u2500\ue0b3</><,transparent>\udb80\udec7 </>"
   },
   "blocks": [
     {
