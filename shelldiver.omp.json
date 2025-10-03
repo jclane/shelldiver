@@ -14,8 +14,12 @@
     "foreground": "p:lite-grey",
     "template": " <p:dark-grey>\ue0b3</>\udb80\udec7 "
   },
+  "transient_prompt": {
+    "foreground": "p:lite-grey",
+    "template": " <p:dark-grey>\ue0b3</>\udb80\udec7 "
+  },
   "blocks": [
-    {~
+    {
       "type": "prompt",
       "alignment": "left",
       "segments": [
