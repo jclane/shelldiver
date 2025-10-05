@@ -30,7 +30,7 @@
           "leading_diamond": "\u256d\u2500\ue0b3<p:lite-grey> \udb81\udd0c\udb81\udd0c </>",
           "background": "p:dark-grey",
           "foreground": "p:lite-grey",
-          "template": "{{ if .SSHSession }}<p:brite-blue>\udb84\udf83</>  STN {{ else }}<p:brite-blue>\uf197</>  SES {{ end }}"
+          "template": "{{ if .SSHSession }}<p:brite-blue>\udb84\udf83</> STN {{ else }}<p:brite-blue>\uf197</>  SES {{ end }}"
         },
         {
           "type": "session",
