@@ -122,11 +122,6 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "venv",
-          "style": "plain",
-          "template": "VENV={{ .Name }}"
-        },
-        {
           "type": "status",
           "style": "plain",
           "properties": {
