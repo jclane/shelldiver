@@ -83,6 +83,11 @@
           }
         },
         {
+          "type": "text",
+          "style": "plain",
+          "template": "TEST-SEGMENT"
+        },        
+        {
           "type": "git",
           "style": "diamond",
           "trailing_diamond": "\ue0b0",
