@@ -83,13 +83,16 @@
           }
         },
         {
-          "type": "venv",
+          "type": "python",
           "style": "diamond",
           "foreground": "p:brite-blue",
           "background": "p:dark-grey",
           "trailing_diamond": "\uE0B0",
-          "template": "HELLO"
-        },   
+          "properties": {
+            "display_mode": "environment"
+           },
+          "template": "<p:orange>\uE235</> {{ .Venv }}"
+        },
         {
           "type": "git",
           "style": "diamond",
