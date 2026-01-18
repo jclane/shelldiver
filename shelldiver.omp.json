@@ -83,11 +83,6 @@
           }
         },
         {
-          "type": "venv",
-          "style": "plain",
-          "template": "VENV={{ .Name }}"
-        },
-        {
           "type": "git",
           "style": "diamond",
           "trailing_diamond": "\ue0b0",
@@ -126,6 +121,11 @@
       "newline": true,
       "alignment": "left",
       "segments": [
+        {
+          "type": "venv",
+          "style": "plain",
+          "template": "VENV={{ .Name }}"
+        },
         {
           "type": "status",
           "style": "plain",
