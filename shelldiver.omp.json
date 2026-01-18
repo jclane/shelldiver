@@ -89,7 +89,7 @@
           "background": "p:dark-grey",
           "leading_diamond": "\uE0B2",
           "trailing_diamond": "\uE0B0",
-          "template": "<p:orange>\uE235</> {{ .Name }}"
+          "template": "HELLO"
         },   
         {
           "type": "git",
