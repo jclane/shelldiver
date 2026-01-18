@@ -85,7 +85,7 @@
         {
           "type": "text",
           "style": "plain",
-          "template": "TEST-SEGMENT"
+          "template": "TEST-SEGMENT 1"
         },
         {
           "type": "venv",
@@ -96,6 +96,11 @@
           "trailing_diamond": "\uE0B0",
           "template": "<p:orange>\uE235</> {{ .Name }}"
         },
+        {
+          "type": "text",
+          "style": "plain",
+          "template": "TEST-SEGMENT 2"
+        },        
         {
           "type": "git",
           "style": "diamond",
