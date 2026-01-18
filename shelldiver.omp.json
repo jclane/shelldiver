@@ -85,8 +85,8 @@
         {
           "type": "python",
           "style": "diamond",
-          "foreground": "p:lite-grey",
-          "background": "#404040",
+          "foreground": "p:yellow",
+          "background": "p:dark-blue",
           "trailing_diamond": "\ue0b0",
           "properties": {
             "display_mode": "environment"
