@@ -84,12 +84,8 @@
         },
         {
           "type": "venv",
-          "style": "diamond",
-          "foreground": "p:brite-blue",
-          "background": "p:dark-grey",
-          "leading_diamond": "\uE0B2",
-          "trailing_diamond": "\uE0B0",
-          "template": "<p:orange>\uE235</> {{ .Name }}"
+          "style": "plain",
+          "template": "VENV={{ .Name }}"
         },
         {
           "type": "git",
