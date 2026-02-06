@@ -53,8 +53,7 @@
           "properties": {
             "time_format": "3:04PM"
           },
-          "min_width": 80,
-          "priority": 50
+          "min_width": 81
         }
       ]
     },
